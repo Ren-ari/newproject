@@ -129,7 +129,7 @@
         // API 호출
         async function fetchWeatherAndPM10(lat, lon) {
             const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`;
-            const pm10Url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+            const pm10Url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
 
             try {
                 const [weatherResponse, pm10Response] = await Promise.all([
